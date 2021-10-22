@@ -1,31 +1,43 @@
-@media screen and (min-width: 1441px) {
-  html,
-  body {
-    background-position: center center;
-    background-size: cover;
+@media screen and (max-width: 1025px) {
+  #main-header {
+    width: 75%;
+  }
+
+  .illustration {
+    max-width: 75%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  #main-header {
-    .grid-container {
-      grid-template-columns: minmax(275px, 1fr);
-      text-align: center;
+@media screen and (max-width: 850px) {
+  #form {
+    flex-direction: column;
+
+    .btn {
+      align-self: center;
+      width: 100%;
     }
+  }
+
+  .error-msg {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 450px) {
-  html,
-  body {
-    background: url("../images/bg-intro-mobile.png") no-repeat center center,
-      $red;
-  }
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  .container {
-    padding: 20px 1rem;
+  .sub-header {
+    font-size: 0.8rem;
+  }
+
+  #main-header {
+    width: 100%;
+  }
+
+  .illustration {
+    max-width: 100%;
+    padding-top: 0;
   }
 }

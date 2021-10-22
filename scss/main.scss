@@ -1,2 +1,123 @@
 @import "variables";
 @import "main-styles";
+
+.grid-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+#main-header {
+  width: 50%;
+}
+
+#logo {
+  padding-top: 1rem;
+}
+
+h1 {
+  span {
+    color: $neutral2;
+    font-weight: 700;
+  }
+}
+
+.sub-header {
+  color: $neutral2;
+  padding-bottom: 1.5rem;
+}
+
+// inputfield
+#form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .inputcontainer {
+    flex: 1 1 75%;
+  }
+
+  .inputfield {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2.5rem;
+    border: 1px solid $secondary1;
+
+    &::placeholder {
+      color: $secondary1;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $neutral2;
+    }
+  }
+
+  .btn {
+    flex: 1 1 35%;
+    align-self: flex-start;
+    background: $primary1;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: $hoverTransition;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// error message
+.error-msg {
+  color: $secondary2;
+  font-size: 0.6rem;
+  font-style: italic;
+  text-align: left;
+  padding: 5px 0 0 1rem;
+}
+
+// illustration
+.illustration {
+  max-width: 50%;
+  padding: 3.5rem 0;
+}
+
+// Footer
+#main-footer {
+  align-self: flex-end;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+
+  i {
+    font-size: 13px;
+    color: $primary1;
+    padding: 8px;
+    border: 1px solid $secondary1;
+    border-radius: 50%;
+    transition: $hoverTransition;
+    cursor: pointer;
+
+    &:hover {
+      background: $primary1;
+      color: #fff;
+    }
+  }
+}
+
+.copyright {
+  font-size: 13px;
+  padding-bottom: 1rem;
+}
+
+@import "media";

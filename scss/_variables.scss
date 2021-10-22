@@ -1,19 +1,22 @@
 // Primary colors
-$red: hsl(0, 100%, 74%);
-$green: hsl(154, 59%, 51%);
+$primary1: hsl(223, 87%, 63%); //blue
 
-// accent
-$accentBlue: hsl(248, 32%, 49%);
+// Secondary Colors
+$secondary1: hsl(223, 100%, 88%); //Pale blue
+$secondary2: hsl(354, 100%, 66%); // light red
 
 // Neutral
-$darkBlue: hsl(249, 10%, 26%);
-$grayishBlue: hsl(246, 25%, 77%);
+$neutral1: hsl(0, 0%, 59%); // Gray
+$neutral2: hsl(209, 33%, 12%); //Very dark Blue
 
-$fontSize: 16px;
+$fontSize: 20px;
 
-$fontFamily: "Poppins", sans-serif;
+$fontFamily: "Libre Franklin", sans-serif;
 
 // Width
 $containerWidth: 1200px;
 $mobileWidth: 360px;
 $tabletWidth: 770px;
+
+// transitions
+$hoverTransition: all 300ms ease;
